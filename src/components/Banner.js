@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import explore from "../assets/img/explore-btn2.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,8 +12,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "1 Lac", "10 Lac", "1 Crore" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +42,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(300);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -54,25 +55,20 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div 
-              // className={isVisible ? "animate__animated animate__fadeIn" : ""}
-              >
-                {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                {/* <h1>{`Let's Play with Groovy !!!`}  */}
-                {/* <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span> */}
-                {/* </h1> */}
-                  {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Download Now<ArrowRightCircle size={25} /></button> */}
-              </div>
-              }
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <span className="tagline">Real Money Games</span>
+                <h1>{`Play & Win upto`} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "1 Lac", "10 Lac", "1 Crore" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Dive into a world of exhilaration and joy in our arcade, card games and real money universe, where every click and every play is a promise of sheer delight and thrilling adventures!.</p>
+                  <button onClick={() => console.log('connect')}>
+                    <img src={explore} className="explore-btn"></img>
+                  </button>
+              </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div 
-                className={isVisible ? "animate__animated animate__zoomIn" : ""}
-                >
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   {/* <img src={headerImg} alt="Header Img"/> */}
                 </div>}
             </TrackVisibility>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+
+import map from "../assets/img/map2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -15,6 +16,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
+  
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -50,7 +52,9 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                  <a href="https://maps.app.goo.gl/TinD2JaLdz9VUD5u9" target="_blank" rel="noopener noreferrer">
+                  <img className="map-img" src={map} alt="Map"/>
+                </a>
               }
             </TrackVisibility>
           </Col>
