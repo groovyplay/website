@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #fff!important;
+  color: #2E1B5B !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -83,7 +83,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -92,14 +92,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #fba5a5;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #2E1B5B !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -120,7 +120,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: #2E1B5B;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -134,7 +134,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #2E1B5B;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -148,12 +148,12 @@ span.navbar-text {
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+	filter: brightness(0) saturate(100%) invert(0%) sepia(70%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #2E1B5B;
+  border: 1px solid #E14848;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -169,7 +169,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #f76a6a;
   left: 0;
   top: 0;
   z-index: -1;
@@ -243,7 +243,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  color: #fff;
+  background: linear-gradient(90.21deg, rgba(252, 86, 89, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -252,13 +253,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
+  color: #E14848;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #2E3B8E;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -268,7 +270,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 10px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -279,21 +281,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
+
+.explore-btn {
+  width: 150px;
+}
 .banner button:hover svg {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 5s linear infinite;
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 }
 .txt-rotate > .wrap {
@@ -302,11 +308,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 100px 0;
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #e1f3fc;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -317,7 +323,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #2E1B5B;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -340,11 +346,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Games Css ************/
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #fff;
 }
 .project h2 {
 	font-size: 45px;
@@ -421,7 +427,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #2e1b5b -5.91%, #080808 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -440,10 +446,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: #fff;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.app-icons img {
+  width: 120px; /* Adjust the width of the images */
+  margin: 0 10px; /* Adjust spacing between images */
 }
 .proj-txtx h4 {
   font-size: 30px;
@@ -464,16 +483,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+
+
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(180deg, #ffffff -5.91%, #F1FCFB 100.58%);
+
   padding: 60px 0 200px 0;
 }
 .contact img {
   width: 92%;
+  border-radius: 15px;
+  border: 2px solid #ccc; /* Add border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: all 0.3s ease-in-out; /* Add transition for smooth effect */
 }
+
+.contact img:hover {
+  transform: scale(1.05); /* Add hover effect to scale up image slightly */
+}
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -481,10 +512,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(241, 19, 19, 0.1);
+  border: 1px solid rgba(112, 3, 3, 0.5);
   border-radius: 20px;
-  color: #fff;
+  color: #000000;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -499,7 +530,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #000000;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
   color: #121212;
@@ -519,16 +550,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button span {
   z-index: 1;
   position: relative;
+
+  
 }
 .contact form button:hover {
   color: #fff;
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #2E1B5B;
   width: 0;
   height: 100%;
   position: absolute;
+  
+
   top: 0;
   left: 0;
   z-index: 0;
@@ -540,79 +575,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
+  position: relative;
+  /* padding: 50px 0 50px 0; */
+  background-image: url('./assets/img/footer2.jpeg');
+
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-.footer img {
-  width: 26%;
+
+.logo-footer {
+  width: 30%;
+
 }
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: #fcfbfb;
   letter-spacing: 0.5px;
   margin-top: 20px;
+
+}
+
+
+/* Unique Card Container */
+.unique-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* Increase spacing between the cards */
+  width: 100%;
+  padding: 0;
+
+}
+/* Unique Card */
+.unique-card {
+  /* width: calc(25% - 20px);  Adjust the width as needed */
+  margin-bottom: 10px;
+  background-color: #fbf5f5; /* Dark background color */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  background: linear-gradient(180deg, #eba4b1,#fcfcfc ); /* Gradient background */
+  text-align: center;
+  border: 3px solid #7b02a3; /* Pink border */
+  padding-top: 20px; /* Adjusted padding */
+  padding-bottom: 0px;
+
+}
+
+/* Unique Logo */
+.unique-logo {
+  width: 100px; /* Adjust the size of the logo */
+  margin: 15px; /* Adjusted margin */
+  height: auto;
+  filter: drop-shadow(0 0 10px #ff69b4); /* Background glow */
+  margin-bottom: 40px;
+}
+
+/* Unique Description */
+.unique-description {
+  color: #fff; /* White text color */
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 14px!important;
 }

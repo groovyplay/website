@@ -1,45 +1,53 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import { GameCard } from "./GameCard";
+import projImg1 from "../assets/img/roadcraft.webp";
+import projImg2 from "../assets/img/speedway.webp";
+import projImg3 from "../assets/img/parkmaster.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Projects = () => {
+export const Games = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "RoadCraft",
+      description: "Draw the Bridge",
       imgUrl: projImg1,
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.RoadCraft.drawbridge"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "SpeedWay",
+      description: "Mobile Racing Game",
       imgUrl: projImg2,
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.GroovyPlay.SpeedWay"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Park Master",
+      description: "Test your Parking Skills",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.groov.parkMaster"
+    }
+    // ,
+    // {
+    // title: "Park Master",
+    // description: "Test your Parking Skills",
+    // imgUrl: projImg3,
+    // googlePlayUrl: "https://play.google.com/store/apps/details?id=com.groov.parkMaster"
+    // },
+    // {
+    //   title: "SpeedWay",
+    //   description: "Mobile Racing Game",
+    //   imgUrl: projImg2,
+    //   googlePlayUrl: "https://play.google.com/store/apps/details?id=com.GroovyPlay.SpeedWay"
+    // },
+    // {
+    //   title: "RoadCraft",
+    //   description: "Draw the Bridge",
+    //   imgUrl: projImg1,
+    //   googlePlayUrl: "https://play.google.com/store/apps/details?id=com.RoadCraft.drawbridge"
+    // },
+
   ];
 
   return (
@@ -50,27 +58,17 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Our recent Launched Games</h2>
+                <p>"Enjoy the Thrill, Play Responsibly: We're committed to providing a fun and responsible gaming environment. For tips and support on keeping gaming enjoyable, use our new launched games from Google Play and iOS. store</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
+
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
                           projects.map((project, index) => {
                             return (
-                              <ProjectCard
+                              <GameCard
                                 key={index}
                                 {...project}
                                 />
